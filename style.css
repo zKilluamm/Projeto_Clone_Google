@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+section header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+section header ul li a {
+    font-size: 13px;
+    color: #111;
+
+}
+section header ul li a:hover {
+    text-decoration: underline;
+}
+section header ul li a .photo  {
+    border-radius: 15px;
+}
+
+/*main*/
+.main {
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    flex-direction: column;
+    width: 500px;
+    margin-bottom: 200px;
+}
+.main .searchBox {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    
+}
+.main .searchBox .search{
+    width: 100%;
+    padding: 13px;
+    
+    padding-right: 70px;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+.main .searchBox .search:hover {
+    border: 1px solid transparent;
+    box-shadow: 0px 1px 10px #ccc;
+}
+.main .searchBox .icons {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 12px 20px;
+    pointer-events: none;
+    gap: 10px;
+}
+.main .button {
+    margin-top: 30px;
+}
+.main .button button{
+    margin: 0px 5px;
+    padding: 12px 20px;
+    color:  #555;
+    font-size: 14px;
+    outline: none;
+    border-bottom: 4px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.main .button button:hover{
+    border: 1px solid #ccc;
+
+}
+/*footer*/
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;background-color: #f2f2f2;
+    width: 100%;
+    color: #555;
+}
+footer .line{
+    padding: 15px 25px;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+footer .line_top{
+    font-size: 14px;
+}
+footer .line.line2{
+    display: flex;
+    justify-content: space-between;
+}
+footer .line.line2 ul {
+    display: flex;
+    
+}
+footer .line.line2 ul li a{
+    font-size: 14px;
+    color: #5f6368;
+    padding: 5px;
+}
+footer .line.line2 ul li a:hover {
+    text-decoration: underline;
+    color: #555;
+}
